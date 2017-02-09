@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="issues">
+    <option name="index">
+      <map>
+        <entry key="/Dummy.txt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/Documents/Git/Android/MobileMeetDroid/Source/SampleApps/KronosTester/AndroidManifest.xml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/Documents/Git/Android/MobileMeetDroid/Source/SampleApps/KronosTester/src/com/intercall/KronosTester/MainActivity.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/Documents/Git/Android/MobileMeetDroid/Source/SampleApps/KronosTester/src/com/intercall/KronosTester/Tasks/KronosDeRegisterTask.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/Documents/Git/Android/MobileMeetDroid/Source/SampleApps/KronosTester/src/com/intercall/KronosTester/Tasks/KronosRegisterTask.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/Documents/Git/Android/MobileMeetDroid/Source/SampleApps/KronosTester/src/com/intercall/KronosTester/Tasks/KronosSetLanguageTask.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/Documents/Git/Android/MobileMeetDroid/Source/SampleApps/KronosTester/src/com/intercall/KronosTester/Utils/KronosNotificationUtils.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../GoogleSearchExample/AndroidManifest.xml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../GoogleSearchExample/GoogleSearchExample.iml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../GoogleSearchExample/res/layout/main.xml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../GoogleSearchExample/res/layout/search_layout.xml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../GoogleSearchExample/res/values/strings.xml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../GoogleSearchExample/res/xml/searchable.xml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../GoogleSearchExample/src/com/example/GoogleSearchExample/MainActivity.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../GoogleSearchExample/src/com/example/GoogleSearchExample/SearchActivity.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../ICMMAndroidLibrary/src/com/intercall/ICMMAndroidLibrary/Contacts/ContactUtils.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../ICMMAndroidLibrary/src/com/intercall/ICMMAndroidLibrary/Models/Contact.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../ICMMAndroidLibrary/src/com/intercall/ICMMAndroidLibrary/Models/Email.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../ICMMAndroidLibrary/src/com/intercall/ICMMAndroidLibrary/Models/Name.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../ICMMAndroidLibrary/src/com/intercall/ICMMAndroidLibrary/Models/Phone.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../ICMMAndroidLibrary/src/com/intercall/ICMMAndroidLibrary/Utils/AppClass.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../ICMMAndroidLibrary/src/com/intercall/ICMMAndroidLibrary/Voip/SoftphoneManager.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/AndroidManifest.xml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/res/layout/main.xml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/res/layout/pipeactivity_layout.xml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/res/values/strings.xml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/com/intercall/ThreadingSamples/Callables/FindLocation.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/com/intercall/ThreadingSamples/ChainedNetworkActivity.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/com/intercall/ThreadingSamples/Examples/ConsumerProducer.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/com/intercall/ThreadingSamples/HandlerThreads/BackgroundHandlerThread.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/com/intercall/ThreadingSamples/HandlerThreads/SampleHandlerThread.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/com/intercall/ThreadingSamples/HandlerThreads/SharedPrefsHandlerThread.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/com/intercall/ThreadingSamples/ISyncronous.aidl">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/com/intercall/ThreadingSamples/MainActivity.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/com/intercall/ThreadingSamples/PipeExample.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/com/intercall/ThreadingSamples/PipeExampleActivity.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/com/intercall/ThreadingSamples/Runnables/FindLocation.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/com/intercall/ThreadingSamples/Runnables/Test.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/com/intercall/ThreadingSamples/Runnables/TextHandlerTask.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/com/intercall/ThreadingSamples/StartButtonOnClickListner.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/com/intercall/ThreadingSamples/Thread/ThreadWithContext.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/Library/Caches/IntelliJIdea13/compile-server/threadingsamples_a4fd748b/targets/java-production/ThreadingSamples/android/generated_sources/aidl/com/intercall/ThreadingSamples/ISyncronous.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>

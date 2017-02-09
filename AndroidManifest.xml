@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+          package="com.intercall.ThreadingSamples"
+          android:versionCode="1"
+          android:versionName="1.0">
+    <uses-sdk android:minSdkVersion="18"/>
+
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_MOCK_LOCATION"/>
+    <uses-permission android:name="android.permission.BLUETOOTH"/>
+
+    <application android:label="@string/app_name" android:icon="@drawable/ic_launcher">
+        <activity android:name="MainActivity"
+                  android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity android:name="PipeExampleActivity" android:label="Pipe Activity"/>
+        <activity android:name=".ChainedNetworkActivity"/>
+        <activity android:name=".FileDownloadActivity" android:label="activity_file_download"/>
+        <activity android:name=".BluetoothActivity"/>
+        <service android:name=".Services.BluetoothService"/>
+
+        <service android:name=".Services.DownloadService">
+            <intent-filter>
+                <action android:name="com.intercall.ThreadingSamples.ACTION_DOWNLOAD"/>
+                <data android:scheme="http"/>
+            </intent-filter>
+        </service>
+
+        <receiver android:name=".Widget.WidgetClass" >
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+            </intent-filter>
+            <meta-data android:name="android.appwidget.provider"
+                       android:resource="@xml/widget" />
+        </receiver>
+
+    </application>
+</manifest>
