@@ -1,7 +1,10 @@
 package com.intercall.ThreadingSamples;
 
 import android.app.Activity;
+import android.content.ComponentName;
+import android.content.Context;
 import android.content.Intent;
+import android.content.ServiceConnection;
 import android.location.Location;
 import android.net.Uri;
 import android.os.*;
@@ -13,6 +16,7 @@ import android.widget.Toast;
 import com.intercall.ThreadingSamples.AsyncTasks.InteruptionTask;
 import com.intercall.ThreadingSamples.Examples.ConsumerProducer;
 import com.intercall.ThreadingSamples.Runnables.FindLocation;
+import com.intercall.ThreadingSamples.Services.BoundService;
 
 import java.util.concurrent.*;
 
@@ -20,13 +24,22 @@ public class MainActivity extends Activity {
 
     private static final String TAG = "MainActivity";
     private Handler mHandler;
-    Button startButton;
-    TextView outputView;
+    private Button startButton;
+    private TextView outputView;
 
     private Button downloadBtn;
     private final String mURL = "www.google.com";
 
     private AsyncTask interuptionTask;
+
+
+    //Bound Service
+    private BoundService mService;
+    private boolean mBound = false;
+
+    private Button bound_serviceBTN;
+
+
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -48,6 +61,22 @@ public class MainActivity extends Activity {
                 startService(intent);
             }
         });
+
+
+
+        //Using the public methods in a bound service
+        bound_serviceBTN = (Button) findViewById(R.id.bound_service);
+        bound_serviceBTN.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if(mBound) {
+                    String something = mService.saySomething();
+                    Toast.makeText(getApplicationContext(), something, Toast.LENGTH_SHORT).show();
+                }
+            }
+        });
+
+
 
         //Thread - cannot return results
         FindLocation fl = new FindLocation(getApplicationContext());
@@ -143,5 +172,44 @@ public class MainActivity extends Activity {
                 //Process messages here.
             }
         };
+    }
+
+
+    //FetchCertificateService Binding
+    /** Defines callbacks for service binding, passed to bindService() */
+    private ServiceConnection mConnection = new ServiceConnection() {
+
+        @Override
+        public void onServiceConnected(ComponentName className, IBinder service) {
+            // We've bound to LocalService, cast the IBinder and get LocalService instance
+            BoundService.LocalBinder binder = (BoundService.LocalBinder) service;
+            mService = binder.getService();
+            mBound = true;
+        }
+
+        @Override
+        public void onServiceDisconnected(ComponentName arg0) {
+            mBound = false;
+        }
+    };
+
+
+    @Override
+    protected void onStart() {
+        super.onStart();
+        // Bind to LocalService
+        Intent intent = new Intent(this, BoundService.class);
+        bindService(intent, mConnection, Context.BIND_AUTO_CREATE);
+    }
+
+
+    @Override
+    protected void onStop() {
+        super.onStop();
+        // Unbind from the service
+        if (mBound) {
+            unbindService(mConnection);
+            mBound = false;
+        }
     }
 }

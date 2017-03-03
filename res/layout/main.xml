@@ -25,5 +25,13 @@
             android:layout_gravity="center"
             android:layout_marginTop="35dp"/>
 
+
+    <Button android:id="@+id/bound_service"
+            android:text="Bound Service"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="35dp"/>
+
 </LinearLayout>
 
