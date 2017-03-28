@@ -18,8 +18,8 @@ public class DownloadTask extends AsyncTask<String, Bitmap, Void> {
     private FileDownloadActivity mActivity;
     private int mCount = 1;
 
-    public DownloadTask(FileDownloadActivity activity) {
-        mActivity = activity;
+    public DownloadTask() {
+
     }
 
     public void setActivity(FileDownloadActivity activity) {

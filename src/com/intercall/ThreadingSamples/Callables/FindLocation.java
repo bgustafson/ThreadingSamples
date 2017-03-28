@@ -32,6 +32,12 @@ public class FindLocation implements Callable {
             providerIndex = allProviders.indexOf("gps");
         }
 
-        return lm.getLastKnownLocation(allProviders.get(providerIndex));
+        Location lastLocation = lm.getLastKnownLocation(allProviders.get(providerIndex));
+
+        //Sends an SMS from the background thread
+        //SmsManager manager = SmsManager.getDefault();
+        //manager.sendTextMessage("", null, "Hello from: Lat:" + lastLocation.getLatitude() + ", Long:" + lastLocation.getLongitude(), null, null);
+
+        return lastLocation;
     }
 }

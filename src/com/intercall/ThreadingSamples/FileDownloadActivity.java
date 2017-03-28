@@ -4,7 +4,6 @@ import android.app.Activity;
 import android.os.Bundle;
 import android.widget.LinearLayout;
 import android.widget.ProgressBar;
-import com.intercall.ThreadingSamples.AsyncTasks.DownloadTask;
 
 
 public class FileDownloadActivity extends Activity {
@@ -16,7 +15,7 @@ public class FileDownloadActivity extends Activity {
             "http://developer.android.com/design/media/iconography_actionbar_colors.png"
     };
 
-    DownloadTask mFileDownloaderTask;
+    private DownloadTaskFragment mFileDownloadTaskFragment;
 
     //Views
     public ProgressBar mProgressBar;
@@ -31,16 +30,20 @@ public class FileDownloadActivity extends Activity {
         mProgressBar.setMax(DOWNLOAD_URLS.length);
         mLayoutImages = (LinearLayout) findViewById(R.id.imageLayout);
 
+        mFileDownloadTaskFragment = (DownloadTaskFragment) getFragmentManager()
+                .findFragmentByTag(DownloadTaskFragment.TAG);
+        if(mFileDownloadTaskFragment == null) {
+            mFileDownloadTaskFragment = new DownloadTaskFragment();
+            getFragmentManager().beginTransaction().add(mFileDownloadTaskFragment, DownloadTaskFragment.TAG)
+                    .commit();
+        }
 
-        FileDownloadActivity a = this;
-        mFileDownloaderTask = new DownloadTask(a);
-        mFileDownloaderTask.execute(DOWNLOAD_URLS);
+        mFileDownloadTaskFragment.download(DOWNLOAD_URLS);
     }
 
     @Override
     protected void onDestroy() {
         super.onDestroy();
-        mFileDownloaderTask.setActivity(null);
-        mFileDownloaderTask.cancel(true);
+        mFileDownloadTaskFragment.stop();
     }
 }

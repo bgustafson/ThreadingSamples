@@ -6,7 +6,7 @@ import android.content.Intent;
 import android.os.Binder;
 import android.os.IBinder;
 
-public class BoundService extends Service{
+public class BoundService extends Service {
 
     // Binder given to clients
     private final IBinder mBinder = new LocalBinder();
